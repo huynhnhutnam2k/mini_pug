@@ -1,0 +1,39 @@
+section.main 
+  .main-container 
+    .main-container__image 
+      img(src='./images/banner.png' alt='banner')
+    .main-container__info  
+      .main-container__info__name Combo đặc biệt 
+      .main-container__info__price 
+        h3 79.000 đ
+        .main-container__info__price__discount 
+          img(src="./images/Vector.png" alt="")
+          p 100.000 đ
+      ul.main-container__info__list
+        li Gà Rán 1 Miếng
+        li 01 Mì Ý
+        li 01 Khoai Tây Chiên (M)
+        li 01 Pepsi (M)
+      .main-container__extra  
+        .main-container__extra__title Thêm Sốt Gà
+        ul.main-container__extra__list 
+          each section in [{image: "/images/sauce1.png", heading: "Sốt HS", price: '5.000 đ'},{image: "/images/sauce2.png",heading:'Sốt Phô Mai', price: '5.000 đ'},{image: "/images/sauce3.png",heading:"Sốt Đậu", price: '5.000 đ'},{image: "/images/sauce4.png",heading:"Sốt Buffalo", price: '5.000 đ'}]
+            li.main-container__extra__item 
+              .main-container__extra__item__info 
+                img(src=section.image , alt=section.heading)
+                p=section.heading
+              .main-container__extra__item__control 
+                p + 
+                p=section.price
+                .main-container__extra__item__control__btn 
+                  img(src="./images/remove.png", alt="")
+      .main-container__control  
+        .main-container__control__main
+          h3.main-container__control__title Số lượng
+          .main-container__control__inner 
+            .main-container__control__btn.decrement -
+            input(type="text", value="1")
+            .main-container__control__btn.increment +
+        p.main-container__control__desc Bạn tiết kiệm được 30000 ₫ sau khi giảm giá.
+        .main-container__control__btn ĐẶT HÀNG
+          
