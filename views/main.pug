@@ -26,14 +26,17 @@ section.main
                 p + 
                 p=section.price
                 .main-container__extra__item__control__btn 
-                  img(src="./images/remove.png", alt="")
+                  img(src="./images/remove.png" alt="")
       .main-container__control  
         .main-container__control__main
           h3.main-container__control__title Số lượng
           .main-container__control__inner 
             .main-container__control__btn.decrement -
-            input(type="text", value="1")
+            input(type="text" value="1")
             .main-container__control__btn.increment +
-        p.main-container__control__desc Bạn tiết kiệm được 30000 ₫ sau khi giảm giá.
-        .main-container__control__btn ĐẶT HÀNG
-          
+        .main-container__control__desc 
+          p Bạn tiết kiệm được 
+          span.red  30.000 ₫  
+          p sau khi giảm giá.
+        .main-container__control__btn__buy ĐẶT HÀNG
+

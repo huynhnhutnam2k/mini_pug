@@ -44,6 +44,10 @@ ul, li {
   list-style: none;
 }
 
+.red {
+  color: red;
+}
+
 .main {
   background: #F9E9D9;
   padding: 84px 149px 26.5px 105px;
@@ -168,6 +172,11 @@ ul, li {
   display: flex;
   flex-direction: column;
 }
+.main-container__control__desc {
+  display: flex;
+  padding: 15px 0 44px;
+  gap: 0 2.5px;
+}
 .main-container__control__title {
   font-weight: 400;
   font-size: 24px;
@@ -204,6 +213,18 @@ ul, li {
   align-items: center;
   border-radius: 15px;
   font-size: 24px;
+}
+.main-container__control__btn__buy {
+  padding: 6px 45px;
+  background-color: #B00711;
+  color: #fff;
+  width: fit-content;
+  border-radius: 10px;
+  height: 60px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.5;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=app.css.map */
